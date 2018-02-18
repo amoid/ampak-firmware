@@ -12,11 +12,11 @@ all: $(PROG)
 $(PROG): $(SRCS)
 	$(CC) $(CFLAGS) $(LDFLAGS) $< -o $@
 
-install:
-	mkdir -p $(DESTDIR)/usr/bin
-	cp -P $(PROG) $(DESTDIR)/usr/bin
-        mkdir -p $(DESTDIR)/usr/lib/kernel-overlays/base/lib/firmware
-        cp -PR firmware/brcm $(DESTDIR)/usr/lib/kernel-overlays/base/lib/firmware/
+#install:
+#	mkdir -p $(DESTDIR)/usr/bin
+#	cp -P $(PROG) $(DESTDIR)/usr/bin
+# 	mkdir -p $(DESTDIR)/usr/lib/kernel-overlays/base/lib/firmware
+#	cp -PR firmware/brcm $(DESTDIR)/usr/lib/kernel-overlays/base/lib/firmware/
 
 clean:
 	rm -f $(PROG)
