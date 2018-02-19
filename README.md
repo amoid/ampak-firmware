@@ -1,2 +1,3 @@
-# firmware-wetek
-firmware for WeTek devices running mainline Linux kernels
+# firmware-ampak
+
+Linux firmware for Ampak wireless/bluetooth combo cards
